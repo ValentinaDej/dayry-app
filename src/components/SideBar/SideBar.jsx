@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
 import classes from "./SideBar.module.scss";
+import { Title } from "../../shared/Title/Title";
 
 export const SideBar = ({ ...props }) => {
   return (
     <div className={classes.container} {...props}>
-      <h2>DAYRY APP</h2>
-      <div>Comment whit no sense</div>
+      <Title className={classes.logo}>DAYRY APP</Title>
+      <div className={classes.text}>Comment whit no sense</div>
     </div>
   );
 };
