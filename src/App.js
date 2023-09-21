@@ -1,21 +1,21 @@
 import "./App.css";
 
-import { DayryItems } from "./components/DayryItems/DayryItems";
-import { Button } from "./shared/Button/Button";
-import { Input } from "./shared/Input/Input";
+import { SideBar } from "./components/SideBar/SideBar";
+import { Content } from "./components/Content/Content";
 
 function App() {
   return (
-    <div className="App">
-      <Input placeholder="Type name here..." required />
-      <Button mode={"info"}>Add New</Button>
-      <DayryItems />
-      <Input type="color" />
-      <Input mode="textarea" placeholder="Type comment here..." required />
-      <Button mode={"primary"}>Add New Comment</Button>
+    <div className="container">
+      <div className="row">
+        <div className="bar">
+          <SideBar />
+        </div>
+        <div className="content">
+          <Content />
+        </div>
+      </div>
     </div>
   );
 }
 
-//primary", "info", "outline-danger"
 export default App;

@@ -1,38 +1,65 @@
-.App {
+.container {
   text-align: center;
+  color: #353535;
+  font-size: 16px;
+  line-height: 1.6em;
+  background-color: #f9f9f9;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
-.App-link {
-  color: #61dafb;
+.bar {
+  padding-right: 15px;
+  padding-left: 15px;
+  /* max-width: 17%; */
+  /* flex: 0 0 17%;
+  max-width: 17%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  /* display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative; */
+}
+.container {
+  display: flex;
+  height: 100vh; /* Встановлюємо висоту контейнера на весь екран */
+}
+
+.row {
+  display: flex;
+  flex-direction: row; /* Рядок */
+  width: 100%; /* Займає всю доступну ширину контейнера */
+}
+
+.bar {
+  flex: 0 0 15%; /* Займає 15% ширини і не може змінювати свою ширину */
+  height: 100%; /* Займає всю висоту контейнера */
+  background-color: #f0f0f0; /* Колір фону, можна змінити на потрібний */
+}
+
+.content {
+  display: flex;
+  flex-direction: row; /* Стовпчик */
+  justify-content: center; /* Вертикально центруємо вміст */
+  align-items: center; /* Горизонтально центруємо вміст */
+  flex: 1; /* Займає залишок доступної ширини (85%) */
+  height: 100%; /* Займає всю висоту контейнера */
 }

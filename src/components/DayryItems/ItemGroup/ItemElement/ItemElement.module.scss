@@ -1,0 +1,51 @@
+.group-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  &:first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+}
+
+.name {
+  flex-grow: 1;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 100px);
+}
+
+.group-item.active {
+  border-left: 4px solid deeppink;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+  color: #fff;
+  background-color: #17a2b8;
+}
+
+.button-container {
+  width: 100px; /* Встановіть фіксовану ширину кнопки тут */
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.group-item .badge {
+  margin-right: 10px;
+}

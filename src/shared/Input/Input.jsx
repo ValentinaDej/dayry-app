@@ -1,18 +1,13 @@
 import PropTypes from "prop-types";
 import classes from "./Input.module.scss";
 
-export const Input = ({
-  mode = "input",
-  type = "text",
-  placeholder,
-  ...props
-}) => {
+export const Input = ({ mode = "input", value, type = "text", ...props }) => {
   switch (mode) {
     case "input":
       return (
         <input
           type={type}
-          placeholder={placeholder}
+          value={value}
           className={`${classes[`form-control`]}`}
           {...props}
         />
@@ -20,7 +15,7 @@ export const Input = ({
     case "textarea":
       return (
         <textarea
-          placeholder={placeholder}
+          value={value}
           className={`${classes[`form-control`]}`}
           {...props}
         />
