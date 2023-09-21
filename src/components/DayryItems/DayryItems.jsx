@@ -5,6 +5,7 @@ import { Form } from "../../shared/Form/Form";
 import { FormField } from "../../shared/FormField/FormField";
 import { Input } from "../../shared/Input/Input";
 import { Button } from "../../shared/Button/Button";
+import { Title } from "../../shared/Title/Title";
 
 import { ItemGroup } from "./ItemGroup/ItemGroup";
 
@@ -20,7 +21,7 @@ export const DayryItems = ({
 }) => {
   return (
     <BoxShadow>
-      <h2>Items</h2>
+      <Title>Items</Title>
       <Form onSubmit={handleSubmit}>
         <FormField>
           <Input

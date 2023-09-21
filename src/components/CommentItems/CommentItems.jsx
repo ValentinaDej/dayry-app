@@ -5,6 +5,7 @@ import { Form } from "../../shared/Form/Form";
 import { FormField } from "../../shared/FormField/FormField";
 import { Input } from "../../shared/Input/Input";
 import { Button } from "../../shared/Button/Button";
+import { Title } from "../../shared/Title/Title";
 import { CommentGroup } from "./CommentGroup/CommentGroup";
 
 export const CommentItems = ({
@@ -19,7 +20,7 @@ export const CommentItems = ({
 }) => {
   return (
     <BoxShadow>
-      <h2>Comments #{commentNumber}</h2>
+      <Title>Comments #{commentNumber}</Title>
       <CommentGroup comments={savedComments} />
       <Form onSubmit={handleSubmitComment}>
         <FormField>
