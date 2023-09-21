@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import classes from "./SideBar.module.scss";
 import { Title } from "../../shared/Title/Title";
 
@@ -10,5 +9,3 @@ export const SideBar = ({ ...props }) => {
     </div>
   );
 };
-
-SideBar.propTypes = {};

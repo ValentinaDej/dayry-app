@@ -30,4 +30,8 @@ export const ItemElement = ({
 
 ItemElement.propTypes = {
   name: PropTypes.string,
+  index: PropTypes.number,
+  onDelete: PropTypes.func,
+  isActive: PropTypes.bool,
+  commentCount: PropTypes.number,
 };

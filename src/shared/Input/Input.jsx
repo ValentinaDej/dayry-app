@@ -28,5 +28,6 @@ export const Input = ({ mode = "input", value, type = "text", ...props }) => {
 Input.propTypes = {
   mode: PropTypes.oneOf(["input", "textarea"]),
   type: PropTypes.oneOf(["text", "color"]),
+  value: PropTypes.string,
   placeholder: PropTypes.string,
 };

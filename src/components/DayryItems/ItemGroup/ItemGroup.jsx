@@ -4,13 +4,7 @@ import { ItemElement } from "./ItemElement/ItemElement";
 
 import classes from "./ItemGroup.module.scss";
 
-export const ItemGroup = ({
-  items,
-  onItemSelect,
-  onDelete,
-  commentNumber,
-  commentCount,
-}) => {
+export const ItemGroup = ({ items, onItemSelect, onDelete, commentNumber }) => {
   return (
     <ul className={classes.group}>
       {items?.map((item, index) => (
@@ -35,4 +29,6 @@ ItemGroup.propTypes = {
       name: PropTypes.string.isRequired,
     })
   ),
+  onItemSelect: PropTypes.func,
+  onDelete: PropTypes.func,
 };

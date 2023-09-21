@@ -19,8 +19,7 @@ export const Button = memo(({ children, type, onClick, mode, ...props }) => {
 
 Button.propTypes = {
   children: PropTypes.node,
-  className: PropTypes.string,
   type: PropTypes.oneOf(["button", "submit"]),
-  size: PropTypes.oneOf(["primary", "info", "outline-danger"]),
+  mode: PropTypes.oneOf(["primary", "info", "outline-danger"]),
   onClick: PropTypes.func,
 };
