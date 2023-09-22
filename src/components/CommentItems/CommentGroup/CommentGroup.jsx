@@ -2,8 +2,6 @@ import PropTypes from "prop-types";
 
 import { CommentElement } from "./CommentElement/CommentElement";
 
-import classes from "./CommentGroup.module.scss";
-
 export const CommentGroup = ({ comments, ...props }) => {
   return (
     <>
@@ -18,4 +16,6 @@ export const CommentGroup = ({ comments, ...props }) => {
   );
 };
 
-CommentGroup.propTypes = {};
+CommentGroup.propTypes = {
+  comments: PropTypes.array,
+};

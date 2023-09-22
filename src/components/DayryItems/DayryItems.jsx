@@ -45,4 +45,10 @@ export const DayryItems = ({
   );
 };
 
-DayryItems.propTypes = {};
+DayryItems.propTypes = {
+  items: PropTypes.array,
+  onDelete: PropTypes.func,
+  onItemSelect: PropTypes.func,
+  itemName: PropTypes.string,
+  setItemName: PropTypes.func,
+};

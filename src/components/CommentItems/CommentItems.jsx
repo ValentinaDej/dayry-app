@@ -45,4 +45,11 @@ export const CommentItems = ({
   );
 };
 
-CommentItems.propTypes = {};
+CommentItems.propTypes = {
+  savedComments: PropTypes.array,
+  onAction: PropTypes.func,
+  commentName: PropTypes.string,
+  setCommentName: PropTypes.func,
+  commentColor: PropTypes.string,
+  setCommentColor: PropTypes.func,
+};

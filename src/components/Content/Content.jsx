@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
 
 import { DayryItems } from "../DayryItems/DayryItems";
 import { CommentItems } from "../CommentItems/CommentItems";
-
-import classes from "./Content.module.scss";
 
 export const Content = () => {
   const [itemName, setItemName] = useState("");
@@ -173,5 +170,3 @@ export const Content = () => {
     </>
   );
 };
-
-Content.propTypes = {};
