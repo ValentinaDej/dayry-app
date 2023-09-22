@@ -15,14 +15,14 @@ export const DayryItems = ({
   onItemSelect,
   itemName,
   setItemName,
-  handleSubmit,
+  onAction,
   commentNumber,
   ...props
 }) => {
   return (
     <BoxShadow>
       <Title>Items</Title>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={onAction}>
         <FormField>
           <Input
             placeholder="Type name here..."

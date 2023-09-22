@@ -11,7 +11,7 @@ import { CommentGroup } from "./CommentGroup/CommentGroup";
 export const CommentItems = ({
   commentNumber,
   savedComments,
-  handleSubmitComment,
+  onAction,
   commentName,
   setCommentName,
   commentColor,
@@ -22,7 +22,7 @@ export const CommentItems = ({
     <BoxShadow>
       <Title>Comments #{commentNumber}</Title>
       <CommentGroup comments={savedComments} />
-      <Form onSubmit={handleSubmitComment}>
+      <Form onSubmit={onAction}>
         <FormField>
           <Input
             type="color"
